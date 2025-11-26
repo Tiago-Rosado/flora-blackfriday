@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="convertInfo" style="position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,0.8); color: #fff; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px; max-width: 400px; display: none; z-index: 1000;">
+        <strong>To convert WebM to MP4:</strong><br>
+        1. Online: <a href="https://cloudconvert.com/webm-to-mp4" target="_blank" style="color: #4CAF50;">cloudconvert.com</a><br>
+        2. FFmpeg: <code style="background: #333; padding: 2px 5px;">ffmpeg -i input.webm -c:v libx264 -c:a aac output.mp4</code><br>
+        3. Or use screen recording (QuickTime/OBS) for direct MP4
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html>
+
